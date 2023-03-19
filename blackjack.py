@@ -79,18 +79,6 @@ def new_deck():
         deck[index] = value
     
     return deck
-
-def calculate_score(cards):
-    """Take a list of cards and return the score calculated from the cards."""
-    # Check if the sum of the cards is 21 and if there are exactly two cards, which represents a blackjack.
-    if sum(cards) == 21 and len(cards) == 2:
-        return 0
-    # Check if there is an Ace (11) in the list of cards and if the sum of the cards is greater than 21, which represents a bust.
-    if 11 in cards and sum(cards) > 21:
-        cards.remove(11)  # remove one of the Aces from the cards
-        cards.append(1)   # add an Ace with a value of 1 to the cards
-    # Return the sum of the cards.
-    return sum(cards)
         
 def create_cards_string(cards):
     cards_string = ""  # Initialize an empty string to store the card strings.
