@@ -1,6 +1,3 @@
-# blackjack
-Python Blackjack task for NAV
-
 How to download and setup Python 3:
 https://www.geeksforgeeks.org/download-and-install-python-3-latest-version/
 
@@ -12,3 +9,7 @@ How to run the blackjack.py app:
 3. Navigate to where you have downloaded blackjack.py
 4. Type 'python blackjack.py'
 5. Enjoy
+
+How to run TestBlackjack.py
+1. Open CMD/Terminal, navigate to the file's location and type:
+ 'python TestBlackjack.py'
