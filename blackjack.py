@@ -40,9 +40,12 @@ def draw_card(user_id):
         # Add the original value of the card to the card's dictionary entry in the deck.
         deck[key]["original_value"] = deck[key]["value"]  
         
-        # If the card's value is A, K, Q, or J, change its value to 10.
-        if deck[key]["value"] in ["A", "K", "Q", "J"]: 
+        # If the card's value is K, Q, or J, change its value to 10.
+        if deck[key]["value"] in ["K", "Q", "J"]:
             deck[key]["value"] = 10
+        # If the card is an Ace, set its value to 11.
+        if deck[key]["value"] == "A":
+            deck[key]["value"] = 11
 
         # Store the card in a new_card variable.
         new_card = deck[key] 
